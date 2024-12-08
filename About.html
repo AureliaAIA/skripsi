@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/brownless" rel="stylesheet" />
+    <link rel="stylesheet" href="styleabout.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Smart Deposito</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="Program.html" class="brand">Deposito Cerdas</a>
+
+      <ul class="navlist">
+        <li><a href="Program.html">Beranda</a></li>
+        <li><a href="About.html">Tentang</a></li>
+        <li><a href="Daftar.html">Mulai</a></li>
+      </ul>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <div class="menu">
+          <button onclick="showContent('Produk')">Produk</button>
+          <button onclick="showContent('Deposito')">Deposito</button>
+          <button onclick="showContent('MasaPertanggungan')">
+            Masa Pertanggungan
+          </button>
+          <button onclick="showContent('Premi')">Premi</button>
+          <button onclick="showContent('Jenis')">Jenis Deposito</button>
+          <button onclick="showContent('Informasi')">Informasi Program</button>
+        </div>
+
+        <div class="content">
+          <p id="Produk" class="visible">
+            Produk ini menawarkan manfaat asuransi jiwa dengan skema deposito
+            berjangka, memberikan perlindungan finansial sekaligus potensi imbal
+            hasil dari dana yang ditempatkan. Dengan demikian, Anda tidak hanya
+            memperoleh perlindungan asuransi yang lengkap, tetapi juga peluang
+            untuk mengembangkan dana Anda secara aman dan menguntungkan.
+          </p>
+          <p id="Deposito" class="hidden">
+            Deposito adalah investasi aman di mana Anda "menitipkan" uang Anda
+            ke bank untuk jangka waktu tertentu. Sebagai imbalannya, bank
+            memberi Anda bunga yang lebih tinggi dibanding tabungan biasa.
+            <br /><br />
+            Keuntungannya:
+            <br />
+            Risiko rendah: Uang Anda aman dan terjamin. <br />
+            Hasil pasti: Anda tahu persis berapa banyak bunga yang akan Anda
+            dapatkan. <br />
+            Fleksibel: Pilih jangka waktu yang sesuai dengan rencana keuangan
+            Anda.
+          </p>
+          <p id="Jenis" class="hidden">
+            1. Non-ARO (Automatic Roll Over)
+            <br />
+            Saat jatuh tempo, Anda bisa ambil uang atau perpanjang secara
+            manual.
+            <br /><br />
+            2. ARO (Automatic Roll Over)
+            <br />
+            Saat jatuh tempo, otomatis diperpanjang dengan bunga yang berlaku
+            saat itu.
+            <br /><br />
+            3. ARO+ (Automatic Roll Over Plus)
+            <br />
+            Otomatis diperpanjang, tapi dengan tambahan bunga bisa ditambahkan
+            ke pokok deposito.
+          </p>
+          <p id="MasaPertanggungan" class="hidden">
+            Jika deposito adalah celengan ajaib, maka masa pertanggungan adalah
+            waktu ajaib yang menjadi durasi perlindungan keuangan keluarga Anda.
+            <br /><br />
+            Masa pertanggungan adalah jangka waktu berlakunya perlindungan
+            asuransi yang diberikan oleh perusahaan asuransi kepada tertanggung
+            sesuai dengan yang tertera dalam polis.
+          </p>
+          <p id="Premi" class="hidden">
+            Premi adalah jumlah uang yang Anda bayarkan kepada perusahaan
+            asuransi. Ini seperti membeli 'jaminan' bahwa jika sesuatu terjadi,
+            Anda atau keluarga Anda akan mendapatkan bantuan finansial.
+          </p>
+          <p id="Informasi" class="hidden">
+            Program ini dibuat oleh Aurelia dengan NIM 535210031 sebagai bagian
+            dari tugas akhir skripsinya yang berjudul Sistem Estimasi Masa
+            Pertanggungan dan Premi Deposito dengan Menggunakan Metode Random
+            Forest. Program ini dikembangkan dengan tujuan untuk membantu
+            memperkirakan masa pertanggungan dan premi yang diperlukan dalam
+            produk deposito dengan menggunakan algoritma machine learning Random
+            Forest.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- custom js script -->
+    <script src="scriptabout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premi</title>
+    <link rel="stylesheet" href="stylepremiMasaPertanggungan.css" />
+    <link href="https://fonts.cdnfonts.com/css/brownless" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/unbounded" rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/colinas-personal-use"
+      rel="stylesheet"
+    />
+
+    <!-- boxicon link -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- remixicon link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="Program.html" class="brand">Deposito Cerdas</a>
+
+      <ul class="navlist">
+        <li><a href="Program.html">Beranda</a></li>
+        <li><a href="About.html">Tentang</a></li>
+        <li><a href="Daftar.html">Mulai</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <div class="logo">
+              <a>Cerdas Memilih Premi</a>
+            </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p>Finansial<br /><span>Kunci Utama</span></p>
+              </li>
+              <li class="step active">
+                <span>2</span>
+                <p>Rekomendasi<br /><span>Solusi Tepat</span></p>
+              </li>
+            </ul>
+          </div>
+          <form action="">
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2>Informasi Keuangan</h2>
+
+              <div class="Masa-Pertanggungan">
+                <label>Masa Pertanggungan</label>
+                <div class="Pilihan-Box">
+                  <h5
+                    class="pilihan4"
+                    onclick="activateText4(this, '2', '3.25%')"
+                  >
+                    3 bulan
+                  </h5>
+                  <h5
+                    class="pilihan4"
+                    onclick="activateText4(this, '4', '4.5%')"
+                  >
+                    6 bulan
+                  </h5>
+                  <h5 class="pilihan4" onclick="activateText4(this, '0', '7%')">
+                    12 bulan
+                  </h5>
+                  <h5
+                    class="pilihan4"
+                    onclick="activateText4(this, '1', '7.72%')"
+                  >
+                    24 bulan
+                  </h5>
+                  <h5
+                    class="pilihan4"
+                    onclick="activateText4(this, '3', '7.71%')"
+                  >
+                    36 bulan
+                  </h5>
+                  <h5
+                    class="pilihan4"
+                    onclick="activateText4(this, '5', '8.29%')"
+                  >
+                    60 bulan
+                  </h5>
+                </div>
+                <div class="suku-bunga">Suku Bunga:</div>
+              </div>
+            </div>
+            <div class="form-three form-step">
+              <div class="bg-svg"></div>
+              <h2>Rekomendasi</h2>
+              <!-- BARUU -->
+              <div class="prediction-form">
+                <div class="form-group">
+                  <label>Jenis Kelamin</label>
+                  <input type="text" id="predJenisKelamin" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Usia</label>
+                  <input type="text" id="predUsia" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Pekerjaan</label>
+                  <input type="text" id="predPekerjaan" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Sumber Dana</label>
+                  <input type="text" id="predSumberDana" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Sumber Dana Tambahan</label>
+                  <input type="text" id="predSumberDanaTambahan" readonly />
+                </div>
+
+                <div class="form-group">
+                  <label>Masa Pertanggungan</label>
+                  <input type="text" id="predMasaPertanggungan" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Penghasilan Bersih per Bulan</label>
+                  <input type="text" id="predPenghasilanBersih" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Tujuan</label>
+                  <input type="text" id="predTujuan" readonly />
+                </div>
+                <div class="form-group">
+                  <label>Jenis Deposito</label>
+                  <input type="text" id="predJenisDeposito" readonly />
+                </div>
+              </div>
+              <div class="recommendation-container">
+                <div class="recommendation-box">
+                  <h2>Rekomendasi Premi</h2>
+                  <div class="MasaPertanggungan-box">
+                    <div class="kanan" id="recommendationResult">
+                      <!-- Hasil Akumulasi Bunga tampil di sini -->
+                    </div>
+                    <!-- <p class="Rp"></p> -->
+                  </div>
+                </div>
+
+                <div class="recommendation-box">
+                  <h2>Persentase Bunga</h2>
+                  <div class="MasaPertanggungan-box">
+                    <div class="kanan" id="persentaseBungaResult">
+                      <!-- Hasil Akumulasi Bunga tampil di sini -->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="recommendation-box">
+                  <h2>Akumulasi Bunga</h2>
+                  <div class="MasaPertanggungan-box">
+                    <div class="kanan" id="akumulasiBungaResult">
+                      <!-- Hasil Akumulasi Bunga tampil di sini -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class = "Keterangan">
+                Telah selesai? Silakan klik kembali ke beranda
+              </p>
+            </div>
+
+            <!-- HTML Structure -->
+            <div class="btn-group">
+              <button type="button" class="btn-prev">Kembali</button>
+              <button type="button" class="btn-next">Selanjutnya</button>
+              <button type="button" class="btn-Edit">Perbaiki Data Diri</button>
+              <button type="button" class="btn-fitur">Pilih Fitur Lain</button>
+              <button type="button" class="btn-submitt">Kirim</button>
+              <button type="button" class="btn-submit-Beranda">
+                Kembali ke Beranda
+              </button>
+              <!-- Tombol tambahan -->
+            </div>
+          </form>
+          <div id="loading-screen">
+            <div class="spinner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scriptpremi.js"></script>
+    <script src="navigation.js"></script>
+  </body>
+</html>

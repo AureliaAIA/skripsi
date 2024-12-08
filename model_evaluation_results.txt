@@ -1,0 +1,32 @@
+MODEL EVALUATION RESULTS
+==================================================
+
+Performance Metrics:
+------------------------------
+MSE................. 42.1561
+RMSE................ 6.4928
+MAE................. 3.0750
+R2.................. 0.8904
+MAPE................ 18.5624
+Accuracy............ 81.4376
+
+Summary Statistics:
+------------------------------
+Mean_Actual......... 23.2800
+Mean_Predicted...... 23.4524
+Std_Actual.......... 19.6133
+Std_Predicted....... 18.0270
+Min_Actual.......... 3.0000
+Min_Predicted....... 3.4500
+Max_Actual.......... 60.0000
+Max_Predicted....... 59.7300
+
+Error Distribution Analysis:
+--------------------------------------------------
+                Count  Percentage
+Absolute_Error                   
+0-1 month          28   57.142857
+1-3 months         10   20.408163
+3-6 months          5   10.204082
+6-12 months         2    4.081633
+>12 months          4    8.163265

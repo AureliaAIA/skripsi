@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Informasi Pengguna</title>
+    <link rel="stylesheet" href="styleDaftar.css" />
+    <link href="https://fonts.cdnfonts.com/css/brownless" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/unbounded" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/colinas-personal-use" rel="stylesheet">
+                
+ <!-- boxicon link -->
+ <link
+ rel="stylesheet"
+ href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+/>
+
+<!-- remixicon link -->
+<link
+ href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+ rel="stylesheet"
+/>
+
+<!-- google font link -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+ href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+ rel="stylesheet"
+/>
+  </head>
+
+  <body>
+    <header>
+      <a href="Program.html" class="brand">Deposito Cerdas</a>
+
+      <ul class="navlist">
+        <li><a href="Program.html">Beranda</a></li>
+        <li><a href="About.html">Tentang</a></li>
+        <li><a href="Daftar.html">Mulai</a></li>
+      </ul>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <div id="page" class="site">
+      <div class="container">
+        <div class="form-box">
+          <div class="progress">
+            <div class="logo">
+              <a>Langkah Awal Menuju Solusi</a>
+            </div>
+            <ul class="progress-steps">
+              <li class="step active">
+                <span>1</span>
+                <p>Data Diri<br /><span>Langkah Awal</span></p>
+              </li>
+              <li class="step active">
+                <span>2</span>
+                <p>Finansial<br /><span>Kunci Utama</span></p>
+              </li>
+              <li class="step active">
+                <span>3</span>
+                <p>Pilihan Cerdas<br /><span>Solusi Ideal</span></p>
+              </li>
+            </ul>
+          </div>
+          <form action="">
+            <div class="form-one form-step active">
+              <div class="bg-svg"></div>
+              <h2>Data Diri</h2>
+              <p>Masukkan informasi pribadi Anda dengan benar</p>
+              <div class="Jenis Kelamin">
+                <label>Jenis Kelamin</label>
+                <select name="Jenis Kelamin" id="JenisKelamin">
+                  <option value="" disabled selected>Pilih Salah Satu</option>
+                  <option value="1" id="1">Perempuan</option>
+                  <option value="0" id="0">Laki-laki</option>
+                </select>
+              </div>
+              <div class="Usia">
+                <label>Usia</label>
+                <select name="Usia" id="Usia">
+                  <option value="" disabled selected>Pilih Salah Satu</option>
+                  <option id="0" value="0">17 - 27 Tahun</option>
+                  <option id="1" value="1">28 - 38 Tahun</option>
+                  <option id="2" value="2">39 - 49 Tahun</option>
+                  <option id="3" value="3">50 - 60 Tahun</option>
+                  <option id="4"value="4">Lebih dari 60 Tahun</option>
+                </select>
+              </div>
+              <div class="Pekerjaan">
+                <label>Pekerjaan</label>
+                <select name="Pekerjaan" id="Pekerjaan">
+                  <option value="" disabled selected>Pilih Salah Satu</option>
+                  <option id="2" value="2">Pegawai Negeri</option>
+                  <option id="3" value="3">Wirausaha</option>
+                  <option id="0" value="0">Karyawan Swasta</option>
+                  <option id="1" value="1">Mahasiswa</option>
+                </select>
+              </div>
+              <div class="Sumber-Dana">
+                <label>Sumber Dana</label>
+                <select name="Sumber Dana" id="SumberDana">
+                  <option value="" disabled selected>Pilih Salah Satu</option>
+                  <option id="1" value="1">Gaji</option>
+                  <option id="0" value="0">Bisnis</option>
+                </select>
+              </div>
+              <div class="Sumber-Dana-Tambahan">
+                <label>Sumber Dana Tambahan</label>
+                <select name="Sumber Dana Tambahan" id="SumberDanaTambahan">
+                  <option value="" disabled selected>Pilih Salah Satu</option>
+                  <option id="2" value="2">Warisan</option>
+                  <option id="1" value="1">Tabungan</option>
+                  <option id="0" value="0">Investasi</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-two form-step">
+              <div class="bg-svg"></div>
+              <h2>Informasi Keuangan</h2>
+              <div class="Penghasilan-Bersih-per-Bulan">
+                <label>Penghasilan Bersih per Bulan</label>
+                <div class="Pilihan-Box">
+                  <h5 class="pilihan1" onclick="activateText1(this, '3')">
+                    Rp 5.000.000 - Rp 10.000.000
+                  </h5>
+                  <h5 class="pilihan1" onclick="activateText1(this, '1')">
+                    Rp 10.000.001 - Rp 25.000.000
+                  </h5>
+                  <h5 class="pilihan1" onclick="activateText1(this, '2')">
+                    Rp 25.000.001 - Rp 100.000.000
+                  </h5>
+                  <h5 class="pilihan1" onclick="activateText1(this, '0')">
+                    Lebih dari Rp 100.000.001
+                  </h5>
+                </div>
+              </div>
+              <div class="Tujuan">
+                <label>Tujuan</label>
+                <div class = "Pilihan-Box">
+                  <h5 class="pilihan2" onclick="activateText2(this, '1')">
+                    Dana Pensiun
+                  </h5>
+                  <h5 class="pilihan2" onclick="activateText2(this, '2')">
+                    Investasi
+                  </h5>
+                  <h5 class="pilihan2" onclick="activateText2(this, '0')">
+                    Dana Darurat
+                  </h5>
+                  <h5 class="pilihan2" onclick="activateText2(this, '3')">
+                   Pembelian Aset
+                  </h5>
+                </div>
+              </div>
+              <div class="Jenis-Deposito">
+                <label>Jenis Deposito</label>
+                <div class = "Pilihan-Box">
+                  <h5 class="pilihan3" onclick="activateText3(this, '1')">
+                    ARO+
+                  </h5>
+                  <h5 class="pilihan3" onclick="activateText3(this, '0')">
+                    ARO
+                  </h5>
+                  <h5 class="pilihan3" onclick="activateText3(this, '2')">
+                   Non ARO
+                </div>
+                </div>
+            </div>
+
+            <div class="form-three form-step">
+              <div class="bg-svg"></div>
+              <h2>Data diri Anda telah berhasil disimpan!</h2>
+              <h4>Pilih fitur yang ingin digunakan</h4>
+              <p class = "Keterangan">
+                Batalkan proses? Klik kembali ke beranda
+              </p>
+              <!-- BARUU -->
+            </div>
+
+      <!-- HTML Structure -->
+      <div class="btn-group">
+        <button type="button" class="btn-prev">Kembali</button>
+        <button type="button" class="btn-next">Selanjutnya</button>
+        <button type="button" class="btn-submitt">Kirim</button>
+        <button type="button" class="btn-Edit">Perbaiki Data Diri</button>
+        <button type="button" class="btn-MP">Masa Pertanggungan</button>
+        <button type="button" class="btn-PR">Premi</button>
+        <button type="button" class="btn-submit-Beranda">Kembali ke Beranda</button> <!-- Tombol tambahan -->
+      </div>
+
+    </form>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+  </div>  
+  </div>
+</div>
+</div>
+<script src="scriptDaftar.js"></script>
+</body>
+</html>
