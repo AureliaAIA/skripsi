@@ -22,10 +22,10 @@
 - Pastikan keduanya berstatus "Running".
 
 5. Konfigurasi Database
--Buka phpMyAdmin: http://localhost/phpmyadmin
--Buat database baru:
-  Nama: "Program"
--Collation: utf8mb4_general_ci
+- Buka phpMyAdmin: http://localhost/phpmyadmin
+- Buat database baru:
+      Nama: "Program"
+- Collation: utf8mb4_general_ci
 
 6. Import Database
 - Pilih database yang dibuat.
